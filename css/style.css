@@ -25,14 +25,40 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* About section layout with photo */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1 1 200px;
+}
+
+.about-photo {
+  flex: 0 0 150px;
+}
+
+.about-photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Projects */
 .project {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 15px;
 }
 
 .project img {
   width: 200px;
+  height: auto;
 }
 
 form {

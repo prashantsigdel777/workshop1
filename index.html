@@ -1,56 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prashant Sigdel | Portfolio</title>
 
-    <title>workshop1
-    </title>
-</head>
-<body>
-  <header>
-    <h1>MY PAGE</h1>
-  </header>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+      header {
+        background: #222;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
 
-  <main>
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      section {
+        padding: 30px 0;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      /* Profile */
+      #about {
+        text-align: center;
+      }
+
+      .profile-image {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+
+      #about p {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Projects */
+      .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .project-card {
+        flex: 1 1 200px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .project-icon {
+        font-size: 30px;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      /* Contact */
+      form {
+        max-width: 350px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input,
+      textarea {
+        padding: 8px;
+        width: 100%;
+      }
+
+      button {
+        padding: 8px 15px;
+        background: #222;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px;
+        background: #eee;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Prashant Sigdel</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
     <section id="about">
-      <h2>About</h2>
-      <p>Hey there!! Its Prashant sigdel here currently studenting in herald college.</p>
-      <img src="https://image2url.com/images/1763540001372-8764780e-d17a-4365-ab89-beac9151c502.jpg " alt="random">
+      <img
+        src="https://img.sanishtech.com/u/89ff6fdb2570322dca44fcff7ddea861.jpg"
+        alt="Photo of Prashant Sigdel"
+        class="profile-image"
+      />
+
+      <h2>About Me</h2>
+      <p>
+        Hello, my name is Prashant Sigdel. This is my portfolio website where I
+        share a bit about myself and the things I build using HTML, CSS,
+        JavaScript, Java and Python.
+      </p>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <p>no project found currently!!!! </p>
+      <h2 style="text-align: center">Projects</h2>
+
+      <div class="project-list">
+        <div class="project-card">
+          <span class="project-icon">🌐</span>
+          <h3>HTML Project</h3>
+          <p>A simple website built using HTML.</p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-icon">🎨</span>
+          <h3>CSS Project</h3>
+          <p>A styled webpage using CSS.</p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-icon">⚡</span>
+          <h3>JavaScript Project</h3>
+          <p>An interactive JavaScript tool.</p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-icon">☕</span>
+          <h3>Java Project</h3>
+          <p>A console or GUI app made with Java.</p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-icon">🐍</span>
+          <h3>Python Project</h3>
+          <p>A small Python program or script.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <h2 style="text-align: center">Contact Me</h2>
+
       <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <label>Name</label>
+        <input type="text" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <label>Email</label>
+        <input type="email" required />
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <label>Message</label>
+        <textarea rows="5" required></textarea>
 
-        <button type="submit">Submit</button>
+        <button>Send</button>
       </form>
     </section>
-  </main>
-</body>
+
+    <footer>
+      <p>&copy; 2025 Prashant Sigdel</p>
+    </footer>
+  </body>
 </html>
-
-
-    
